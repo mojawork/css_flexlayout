@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  width: 100%;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */ }
+
+body {
+  background-color: #efefef; }
+
+html {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 62.5%; }
+
+h1, h2, h3, p, li, a {
+  font-size: 1.2rem;
+  color: #848484; }
+
+header {
+  display: block;
+  background-color: #ffffff;
+  margin: 4px;
+  padding: 8px; }
+
+.set01 {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin: 4px;
+  padding: 8px;
+  align-items: stretch; }
+
+.set01 > nav {
+  min-width: 200px;
+  background-color: #efefef;
+  margin: 4px;
+  padding: 8px;
+  flex: 1 2 calc(20% - 24px);
+  order: 1; }
+
+.set01 > article {
+  min-width: 200px;
+  background-color: #efefef;
+  margin: 4px;
+  padding: 8px;
+  flex: 3 1 calc(60% - 24px);
+  order: 2; }
+
+.set01 > aside {
+  min-width: 200px;
+  background-color: #efefef;
+  margin: 4px;
+  padding: 8px;
+  flex: 1 2 calc(20% - 24px);
+  order: 3; }
+
+.set02 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ffffff;
+  margin: 4px;
+  padding: 8px; }
+
+.set02 > section {
+  margin: 4px;
+  background-color: #efefef;
+  min-width: 200px;
+  padding: 8px;
+  flex: 1 0 calc(25% - 24px);
+  height: 100px;
+  transition: 0.75s ease-in-out;
+  cursor: pointer; }
+
+.set02 > section:hover {
+  background-color: #0470b2;
+  color: #ffffff;
+  flex: 1 0 calc(40% - 24px);
+  height: 200px;
+  margin: -50px 4px 4px; }
+
+.set02 > section:hover h2, .set02 > section:hover p {
+  color: #ffffff; }
+
+.set0 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ffffff;
+  margin: 4px;
+  padding: 8px; }
+
+.set02 > section {
+  margin: 4px;
+  background-color: #efefef;
+  min-width: 200px;
+  padding: 8px;
+  flex: 1 0 calc(25% - 24px);
+  height: 100px;
+  transition: 0.75s ease-in-out;
+  cursor: pointer; }
+
+.set02 > section:hover {
+  background-color: #0470b2;
+  color: #ffffff;
+  flex: 1 0 calc(40% - 24px);
+  height: 200px;
+  margin: -50px 4px 4px; }
+
+.set02 > section:hover h2, .set02 > section:hover p {
+  color: #ffffff; }
+
+/*
+
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+    width: 70px;
+    height: 74px;
+}
+
+<input type="checkbox" id="btnControl"/>
+<label class="btn" for="btnControl"><img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/200/140.jpg" id="btnLeft" /></label
+ */
+footer {
+  display: block;
+  background-color: #ffffff;
+  margin: 4px;
+  padding: 8px; }
+
+aside {
+  background-color: #efefef;
+  margin: 4px;
+  padding: 8px; }
+
+hr {
+  height: 1px;
+  background-color: #848484;
+  border: 0; }

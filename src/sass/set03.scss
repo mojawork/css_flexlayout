@@ -1,0 +1,45 @@
+.set0 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $colorMain;
+  margin: $margin;
+  padding : $padding;
+}
+
+.set02 > section {
+  margin: $margin;
+  background-color: $colorSection;
+  min-width:$minWidth;
+  padding : $padding;
+  flex: 1 0 calc(25% - #{$spacer});
+  height: 100px;
+  transition: 0.75s ease-in-out;
+  cursor: pointer;
+}
+
+.set02 > section:hover {
+  background-color: $colorHoover;
+  color:$colorFontsHoover;
+  flex: 1 0 calc(40% - #{$spacer});
+  height: 200px;
+  margin: -50px $margin $margin;
+}
+
+.set02 > section:hover h2, .set02 > section:hover p {
+  color:$colorFontsHoover;
+}
+
+/*
+
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+    width: 70px;
+    height: 74px;
+}
+
+<input type="checkbox" id="btnControl"/>
+<label class="btn" for="btnControl"><img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/200/140.jpg" id="btnLeft" /></label
+ */

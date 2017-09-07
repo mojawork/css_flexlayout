@@ -1,0 +1,49 @@
+$colorBody: #efefef;
+$colorFonts: #848484;
+$colorFontsHoover:#ffffff;
+$colorHeader:#ffffff;
+$colorMain:#ffffff;
+$colorHr:#848484;
+
+$colorHeadline:#efefef;
+$colorNav:#efefef;
+$colorArticle:#efefef;
+$colorSection:#efefef;
+$colorAside:#efefef;
+
+$colorHoover:#0470b2;
+
+$colorFooter:#ffffff;
+
+$minWidth :200px;
+$margin : 4px;
+$padding : 8px;
+$spacer :24px;
+
+html {
+  height: 100%;
+  width: 100%;
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+}
+
+body{
+  background-color:$colorBody;
+}
+
+@import "fonts.scss";
+@import "header.scss";
+@import "set01.scss";
+@import "set02.scss";
+@import "set03.scss";
+@import "footer.scss";
+@import "aside.scss";
+
+hr {
+  height: 1px;
+  background-color: $colorHr;
+  border:0;
+}
