@@ -1,0 +1,69 @@
+.set04 {
+  display: flex;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+  background-color: $colorMain;
+  margin: $margin;
+  padding : $padding;
+}
+
+.set04 > nav {
+  min-width:$minWidth;
+  background-color: $colorNav;
+  margin: $margin;
+  padding : $padding;
+  flex:1  0 calc(20% - #{$spacer});
+}
+
+.set04 > article {
+  min-width:$minWidth;
+  margin: $margin;
+  padding : $padding;
+  background-color: $colorArticle;
+  flex: 4  0 calc(80% - #{$spacer});
+  display:flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  header, section{
+    min-width:$minWidth;
+    margin: $margin;
+    padding : $padding;
+    background-color: $colorContentBackground;
+  }
+  header{
+    flex:0  0 calc(100% - #{$spacer});
+  }
+  section{
+    cursor: pointer;
+    flex:1  0 calc(33% - #{$spacer});
+    figure{
+      width:38%;
+      margin: $margin 0;
+      padding: $padding /2;
+      background-color:$colorFigure;
+    }
+    figure.left{
+      float:left;
+      margin-right: $margin *2;
+    }
+    figure.right{
+      float:right;
+      margin-left: $margin *2;
+    }
+    img{
+      width:100%;
+    }
+  }
+  section:hover{
+    background-color:$colorHoover;
+    h2,p{
+      color:$colorFontsHoover;
+    }
+    p{
+      line-height: 24px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+

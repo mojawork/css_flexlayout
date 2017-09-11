@@ -4,14 +4,17 @@ $colorFontsHoover:#ffffff;
 $colorHeader:#ffffff;
 $colorMain:#ffffff;
 $colorHr:#848484;
+$colorBorder:#ffffff;
 
 $colorHeadline:#efefef;
 $colorNav:#efefef;
 $colorArticle:#efefef;
 $colorSection:#efefef;
 $colorAside:#efefef;
+$colorFigure:#efefef;
 
-$colorHoover:#0470b2;
+$colorHoover: rgba(4, 112, 178, 0.60);
+$colorContentBackground:#ffffff;
 
 $colorFooter:#ffffff;
 
@@ -34,16 +37,34 @@ body{
   background-color:$colorBody;
 }
 
+@import "functions.scss";
 @import "fonts.scss";
 @import "header.scss";
 @import "set01.scss";
 @import "set02.scss";
 @import "set03.scss";
+@import "set04.scss";
 @import "footer.scss";
-@import "aside.scss";
+
 
 hr {
   height: 1px;
   background-color: $colorHr;
   border:0;
 }
+
+
+// flex-shrink, flex-grow und flex-basis
+
+/*
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+
+}
+
+<input type="checkbox" id="btnControl"/>
+<label class="btn" for="btnControl"><img src=""  /></label
+ */

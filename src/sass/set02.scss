@@ -11,7 +11,7 @@
   background-color: $colorSection;
   min-width:$minWidth;
   padding : $padding;
-  flex: 1 0 calc(25% - #{$spacer});
+  flex: 1 0 calc(22% - #{$spacer});
   height: 100px;
   transition: 0.75s ease-in-out;
   cursor: pointer;
@@ -20,11 +20,11 @@
 .set02 > section:hover {
   background-color: $colorHoover;
   color:$colorFontsHoover;
-  flex: 1 0 calc(40% - #{$spacer});
-  height: 200px;
-  margin: -50px $margin $margin;
+  flex: 1 0 calc(28% - #{$spacer});
+  height: 140px;
+  margin: -20px $margin $margin;
+  h2,p{
+    color:$colorFontsHoover;
+  }
 }
 
-.set02 > section:hover h2, .set02 > section:hover p {
-  color:$colorFontsHoover;
-}

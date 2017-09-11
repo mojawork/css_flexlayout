@@ -5,7 +5,6 @@
   background-color: $colorMain;
   margin: $margin;
   padding : $padding;
-  align-items:stretch;
 }
 
 .set01 > nav {
@@ -13,21 +12,18 @@
   background-color: $colorNav;
   margin: $margin;
   padding : $padding;
-  flex: 1 2 calc(20% - #{$spacer});
   order: 1;
+  flex: 1 0 calc(20% - #{$spacer});
 }
-
 
 .set01 > article {
   min-width:$minWidth;
   background-color: $colorArticle;
   margin: $margin;
   padding : $padding;
-  flex: 3 1 calc(60% - #{$spacer});
   order: 2;
+  flex: 3 0 calc(60% - #{$spacer});
 }
-
-
 
 .set01 > aside {
   min-width:$minWidth;
@@ -37,3 +33,5 @@
   flex: 1 2 calc(20% - #{$spacer});
   order: 3;
 }
+
+

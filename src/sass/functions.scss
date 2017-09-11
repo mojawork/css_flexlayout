@@ -1,0 +1,12 @@
+@function to-add($a, $b) {
+  @return $a + $b;
+}
+@function to-subtract($a, $b) {
+  @return $a - $b;
+}
+@function to-multiply($a, $b) {
+  @return $a * $b;
+}
+@function to-divide($a, $b) {
+  @return $a / $b;
+}

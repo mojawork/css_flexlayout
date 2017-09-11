@@ -30,24 +30,23 @@ header {
   flex-wrap: wrap;
   background-color: #ffffff;
   margin: 4px;
-  padding: 8px;
-  align-items: stretch; }
+  padding: 8px; }
 
 .set01 > nav {
   min-width: 200px;
   background-color: #efefef;
   margin: 4px;
   padding: 8px;
-  flex: 1 2 calc(20% - 24px);
-  order: 1; }
+  order: 1;
+  flex: 1 0 calc(20% - 24px); }
 
 .set01 > article {
   min-width: 200px;
   background-color: #efefef;
   margin: 4px;
   padding: 8px;
-  flex: 3 1 calc(60% - 24px);
-  order: 2; }
+  order: 2;
+  flex: 3 0 calc(60% - 24px); }
 
 .set01 > aside {
   min-width: 200px;
@@ -69,70 +68,110 @@ header {
   background-color: #efefef;
   min-width: 200px;
   padding: 8px;
-  flex: 1 0 calc(25% - 24px);
+  flex: 1 0 calc(22% - 24px);
   height: 100px;
   transition: 0.75s ease-in-out;
   cursor: pointer; }
 
 .set02 > section:hover {
-  background-color: #0470b2;
+  background-color: rgba(4, 112, 178, 0.6);
   color: #ffffff;
-  flex: 1 0 calc(40% - 24px);
-  height: 200px;
-  margin: -50px 4px 4px; }
+  flex: 1 0 calc(28% - 24px);
+  height: 140px;
+  margin: -20px 4px 4px; }
+  .set02 > section:hover h2, .set02 > section:hover p {
+    color: #ffffff; }
 
-.set02 > section:hover h2, .set02 > section:hover p {
-  color: #ffffff; }
-
-.set0 {
+.set03 {
   display: flex;
   flex-flow: row wrap;
   background-color: #ffffff;
   margin: 4px;
-  padding: 8px; }
+  padding: 8px;
+  justify-content: center; }
 
-.set02 > section {
+.set03 > section {
+  max-width: 200px;
   margin: 4px;
   background-color: #efefef;
   min-width: 200px;
   padding: 8px;
-  flex: 1 0 calc(25% - 24px);
-  height: 100px;
-  transition: 0.75s ease-in-out;
-  cursor: pointer; }
+  position: relative; }
+  .set03 > section h2 {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 16px; }
+  .set03 > section p {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    padding: 8px;
+    background-color: #ffffff; }
+  .set03 > section img {
+    border: 1px solid #ffffff;
+    width: calc(100% - 2px); }
 
-.set02 > section:hover {
-  background-color: #0470b2;
-  color: #ffffff;
-  flex: 1 0 calc(40% - 24px);
-  height: 200px;
-  margin: -50px 4px 4px; }
-
-.set02 > section:hover h2, .set02 > section:hover p {
-  color: #ffffff; }
-
-/*
-
-#btnControl {
-    display: none;
-}
-
-#btnControl:checked + label > img {
-    width: 70px;
-    height: 74px;
-}
-
-<input type="checkbox" id="btnControl"/>
-<label class="btn" for="btnControl"><img src="http://placekitten.com.s3.amazonaws.com/homepage-samples/200/140.jpg" id="btnLeft" /></label
- */
-footer {
-  display: block;
+.set04 {
+  display: flex;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
   background-color: #ffffff;
   margin: 4px;
   padding: 8px; }
 
-aside {
+.set04 > nav {
+  min-width: 200px;
   background-color: #efefef;
+  margin: 4px;
+  padding: 8px;
+  flex: 1 0 calc(20% - 24px); }
+
+.set04 > article {
+  min-width: 200px;
+  margin: 4px;
+  padding: 8px;
+  background-color: #efefef;
+  flex: 4 0 calc(80% - 24px);
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap; }
+  .set04 > article header, .set04 > article section {
+    min-width: 200px;
+    margin: 4px;
+    padding: 8px;
+    background-color: #ffffff; }
+  .set04 > article header {
+    flex: 0 0 calc(100% - 24px); }
+  .set04 > article section {
+    cursor: pointer;
+    flex: 1 0 calc(33% - 24px); }
+    .set04 > article section figure {
+      width: 38%;
+      margin: 4px 0;
+      padding: 4px;
+      background-color: #efefef; }
+    .set04 > article section figure.left {
+      float: left;
+      margin-right: 8px; }
+    .set04 > article section figure.right {
+      float: right;
+      margin-left: 8px; }
+    .set04 > article section img {
+      width: 100%; }
+  .set04 > article section:hover {
+    background-color: rgba(4, 112, 178, 0.6); }
+    .set04 > article section:hover h2, .set04 > article section:hover p {
+      color: #ffffff; }
+    .set04 > article section:hover p {
+      line-height: 24px;
+      letter-spacing: 2px; }
+
+footer {
+  display: block;
+  background-color: #ffffff;
   margin: 4px;
   padding: 8px; }
 
@@ -140,3 +179,16 @@ hr {
   height: 1px;
   background-color: #848484;
   border: 0; }
+
+/*
+#btnControl {
+    display: none;
+}
+
+#btnControl:checked + label > img {
+
+}
+
+<input type="checkbox" id="btnControl"/>
+<label class="btn" for="btnControl"><img src=""  /></label
+ */
