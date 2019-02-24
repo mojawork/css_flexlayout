@@ -166,8 +166,31 @@ header {
     .set04 > article section:hover h2, .set04 > article section:hover p {
       color: #ffffff; }
     .set04 > article section:hover p {
-      line-height: 24px;
       letter-spacing: 2px; }
+
+.set05 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #ffffff;
+  margin: 4px;
+  padding: 8px;
+  box-sizing: border-box; }
+  .set05 section {
+    display: flex;
+    flex: 1 0 10em;
+    margin: 4px;
+    padding: 8px;
+    background-color: #efefef;
+    transition: 500ms ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: 200px; }
+  .set05 section:hover {
+    flex-basis: 28em; }
+  .set05 section:hover {
+    background-color: rgba(4, 112, 178, 0.6); }
+    .set05 section:hover h2 {
+      color: #ffffff; }
 
 footer {
   display: block;

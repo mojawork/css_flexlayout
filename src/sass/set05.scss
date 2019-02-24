@@ -1,0 +1,33 @@
+
+.set05 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: $colorMain;
+  margin: $margin;
+  padding : $padding;
+  box-sizing: border-box;
+  section {
+    display: flex;
+    flex: 1 0 10em;
+    margin:$margin;
+    padding: $padding;
+    background-color: $colorSection;
+    transition: 500ms ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    min-width: $minWidth;
+  }
+
+  section:hover {
+    flex-basis: 28em;
+  }
+
+  section:hover {
+    h2{
+    color:$colorFontsHoover;
+    }
+    background-color:$colorHoover;
+  }
+}
+
+
