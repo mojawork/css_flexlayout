@@ -1,0 +1,59 @@
+$size: 30rem;
+
+.set06 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background-color: $colorMain;
+  margin: $margin;
+  padding: $padding;
+  box-sizing: border-box;
+
+  > div {
+    display: flex;
+    margin: $margin;
+
+    &:hover {
+      &:before, &:after {
+        background-color: $colorHoover;
+      }
+
+      section {
+        background-color: $colorHoover;
+        width: $size * 3;
+      }
+    }
+
+    &:before, &:after {
+      content: '\00a0';
+      display: flex;
+      height: $size;
+      width: $size * 0.5;
+      background-color: $colorSection;
+      transition: 500ms linear;
+    }
+
+    &:before {
+      border-top-left-radius: $size * 0.5;
+      border-bottom-left-radius: $size * 0.5;
+    }
+
+    &:after {
+      border-top-right-radius: $size * 0.5;
+      border-bottom-right-radius: $size * 0.5;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 500ms linear;
+      background-color: $colorSection;
+      width: 0;
+    }
+  }
+
+}
+
+

@@ -1,0 +1,42 @@
+$size: 20rem;
+
+.set07 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  background-color: $colorMain;
+  margin: $margin;
+  padding: $padding;
+  box-sizing: border-box;
+
+  > div {
+    display: flex;
+    margin: $margin;
+
+    &:hover {
+      section {
+        background-color: $colorHoover;
+        width: $size * 3;
+      }
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: 500ms linear;
+      background-color: $colorSection;
+      height: $size;
+      width: $size;
+      border-top-left-radius: $size * 0.5;
+      border-bottom-left-radius: $size * 0.5;
+
+      border-top-right-radius: $size * 0.5;
+      border-bottom-right-radius: $size * 0.5;
+    }
+  }
+
+}
+
+
