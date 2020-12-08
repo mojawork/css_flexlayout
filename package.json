@@ -1,14 +1,16 @@
 {
-  "name": "Css Flexlayout",
+  "name": "Css-Flexlayout",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Markus Lungwitz",
   "license": "ISC",
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
+    "gulp": "3.9.1",
     "gulp-install": "^1.1.0",
     "gulp-sass": "^3.1.0"
   }
